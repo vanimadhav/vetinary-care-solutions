@@ -36,7 +36,7 @@
      unarchive: src=/home/ubuntu/tomcat/apache-tomcat-8.0.27.tar.gz dest=/home/ubuntu/tomcat remote_src=yes
   
    - name: Download Application
-     get_url: url=https://s3.amazonaws.com/vetinary-care-solutions/target/petclinic.war dest=/home/ubuntu/tomcat/webapps
+     get_url: url=https://s3.amazonaws.com/vetinary-care-solutions/CloudAssessment.war dest=/home/ubuntu/tomcat/webapps
 
    - name: stop apache-tomcat-8.0.27
      command: nohup "/home/ubuntu/tomcat/apache-tomcat-8.0.27/bin/shutdown.sh"
